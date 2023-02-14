@@ -10,14 +10,3 @@ export const Container = styled.View`
 export const WelcomeText = styled.Text`
    color: white;
 `;
-
-export const GoToLogin = styled.TouchableOpacity`
-   margin-top: 20px;
-   padding: 10px;
-   border-radius: 4px;
-   background-color: white;
-`;
-
-export const LoginText = styled.Text`
-   color: ${({ theme }) => theme.colors.primary};
-`;

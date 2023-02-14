@@ -1,11 +1,16 @@
 import React from 'react';
-import Home from './src/screens/Home';
 import { ThemeProvider } from 'styled-components';
 import theme from './src/styles/theme';
-export default function App() {
+import Routes from './src/navigation/stacks';
+import { StatusBar } from 'expo-status-bar';
+
+const App = () => {
    return (
       <ThemeProvider theme={theme}>
-         <Home />
+         <StatusBar style="auto" />
+         <Routes />
       </ThemeProvider>
    );
-}
+};
+
+export default App;
