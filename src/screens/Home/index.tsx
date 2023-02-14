@@ -1,11 +1,12 @@
-import React from "react";
+import React from 'react';
+import { Container, WelcomeText } from './Home.styles';
 
 const Home = () => {
-  return (
-    <div>
-      <h1>Home</h1>
-    </div>
-  );
+   return (
+      <Container>
+         <WelcomeText>Home!!!</WelcomeText>
+      </Container>
+   );
 };
 
-export { Home };
+export default Home;

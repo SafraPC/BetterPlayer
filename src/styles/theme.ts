@@ -1,6 +1,4 @@
-import { ThemeTypes } from './types';
-
-const whiteTheme: ThemeTypes = {
+const theme = {
    colors: {
       primary: '#202123',
       secondary: '#2d2d2e',
@@ -22,4 +20,4 @@ const whiteTheme: ThemeTypes = {
    },
 };
 
-export default whiteTheme;
+export default theme;
