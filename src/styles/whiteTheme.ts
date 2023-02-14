@@ -1,4 +1,6 @@
-export default {
+import { ThemeTypes } from './types';
+
+const whiteTheme: ThemeTypes = {
    colors: {
       primary: '#202123',
       secondary: '#2d2d2e',
@@ -19,3 +21,5 @@ export default {
       xxl: 48,
    },
 };
+
+export default whiteTheme;

@@ -2,7 +2,7 @@ import { AppRoutes } from './routes';
 import 'react-toastify/dist/ReactToastify.min.css';
 import { ToastContainer } from 'react-toastify';
 import { GlobalStyles } from './styles/globalStyles';
-import theme from './styles/theme';
+import theme from './styles/blackTheme';
 import { ThemeProvider } from 'styled-components';
 
 function App() {
