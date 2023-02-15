@@ -1,10 +1,9 @@
-import { NavigationProp, useNavigation } from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import { AppRoutes } from '../../navigation/types';
 import { Container, GoToLogin, LoginText, WelcomeText } from './Home.styles';
 
 const Home = () => {
-   const navigation = useNavigation<NavigationProp<AppRoutes>>();
+   const navigation = useNavigation();
 
    return (
       <Container>
