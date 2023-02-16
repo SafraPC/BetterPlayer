@@ -1,13 +1,18 @@
 import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import { Container, GoToLogin, LoginText, WelcomeText } from './Home.styles';
+import {
+   Container,
+   GoToLogin,
+   LoginText,
+   WelcomeText,
+} from './Register.styles';
 
-const Home = () => {
+const Register = () => {
    const navigation = useNavigation();
 
    return (
       <Container>
-         <WelcomeText>Home!!!</WelcomeText>
+         <WelcomeText>Register!!!</WelcomeText>
          <GoToLogin onPress={() => navigation.navigate('Login')}>
             <LoginText>Logar</LoginText>
          </GoToLogin>
@@ -15,4 +20,4 @@ const Home = () => {
    );
 };
 
-export default Home;
+export default Register;

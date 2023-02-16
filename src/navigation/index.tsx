@@ -1,17 +1,16 @@
 import React from 'react';
-import StackNavigation from './stacks';
 import { NavigationContainer } from '@react-navigation/native';
-import BottomNavigation from './tabs';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { LoginStack } from './login';
+import { RegisterStack } from './register';
 
 const Routes = () => {
-   const Navigation = createNativeStackNavigator();
+   const Navigation = createBottomTabNavigator();
    return (
       <NavigationContainer>
          <Navigation.Navigator>
-            <Navigation.Screen name="Bottom" component={BottomNavigation} />
-            <Navigation.Screen name="Stack" component={StackNavigation} />
+            <Navigation.Screen name="Login" component={LoginStack} />
+            <Navigation.Screen name="Register" component={RegisterStack} />
          </Navigation.Navigator>
       </NavigationContainer>
    );

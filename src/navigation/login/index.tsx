@@ -1,9 +1,8 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Home from '../screens/Home';
-import Login from '../screens/Login';
+import Login from '../../screens/Login';
 
-const StackNavigation = () => {
+const LoginStack = () => {
    const Stack = createNativeStackNavigator();
 
    return (
@@ -11,10 +10,9 @@ const StackNavigation = () => {
          screenOptions={{
             headerShown: false,
          }}>
-         <Stack.Screen name="Home" component={Home} />
          <Stack.Screen name="Login" component={Login} />
       </Stack.Navigator>
    );
 };
 
-export default StackNavigation;
+export { LoginStack };

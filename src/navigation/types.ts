@@ -1,4 +1,4 @@
 export interface AppRoutes {
    Login: undefined;
-   Home: undefined;
+   Register: undefined;
 }
