@@ -7,7 +7,7 @@ import AppNavigation from './src/navigation/index';
 const App = () => {
    return (
       <ThemeProvider theme={theme}>
-         <StatusBar style="auto" />
+         <StatusBar style="light" />
          <AppNavigation />
       </ThemeProvider>
    );
