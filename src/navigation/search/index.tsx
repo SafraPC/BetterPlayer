@@ -1,8 +1,8 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Login from '../../screens/Login';
+import Search from '../../screens/Search';
 
-const LoginStack = () => {
+const SearchStack = () => {
    const Stack = createNativeStackNavigator();
 
    return (
@@ -10,9 +10,9 @@ const LoginStack = () => {
          screenOptions={{
             headerShown: false,
          }}>
-         <Stack.Screen name="Login" component={Login} />
+         <Stack.Screen name="search" component={Search} />
       </Stack.Navigator>
    );
 };
 
-export { LoginStack };
+export { SearchStack };

@@ -1,15 +1,16 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { LoginStack } from './login';
-import { RegisterStack } from './register';
 import { iconAnimation, styles } from './styles';
 import Icon from 'react-native-vector-icons/Ionicons';
 import Animated, { useSharedValue } from 'react-native-reanimated';
+import { HomeStack } from './home';
+import { SearchStack } from './search';
+import { PlaylistStack } from './playlist';
 
 const stackAnimation = {
-   LoginStack: 0,
-   LoginStack2: 1,
-   RegisterStack: 2,
+   HomeStack: 0,
+   SearchStack: 1,
+   PlaylistStack: 2,
 };
 
 const BottomRoutes = () => {
@@ -20,7 +21,7 @@ const BottomRoutes = () => {
    return (
       <Navigation.Navigator
          screenOptions={styles}
-         initialRouteName="LoginStack"
+         initialRouteName="HomeStack"
          screenListeners={{
             tabPress: ({ target }) => {
                const stackName = target?.split(
@@ -30,8 +31,8 @@ const BottomRoutes = () => {
             },
          }}>
          <Navigation.Screen
-            name="LoginStack"
-            component={LoginStack}
+            name="HomeStack"
+            component={HomeStack}
             options={{
                tabBarIcon: ({ focused }) => (
                   <Animated.View style={animateIcon(0)}>
@@ -46,8 +47,8 @@ const BottomRoutes = () => {
          />
 
          <Navigation.Screen
-            name="LoginStack2"
-            component={LoginStack}
+            name="SearchStack"
+            component={SearchStack}
             options={{
                tabBarIcon: () => (
                   <Animated.View style={animateIcon(1)}>
@@ -57,8 +58,8 @@ const BottomRoutes = () => {
             }}
          />
          <Navigation.Screen
-            name="RegisterStack"
-            component={RegisterStack}
+            name="PlaylistStack"
+            component={PlaylistStack}
             options={{
                tabBarIcon: ({ focused }) => (
                   <Animated.View style={animateIcon(2)}>

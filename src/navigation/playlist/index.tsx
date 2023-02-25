@@ -1,8 +1,8 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Register from '../../screens/Register';
+import Playlists from '../../screens/Playlists';
 
-const RegisterStack = () => {
+const PlaylistStack = () => {
    const Stack = createNativeStackNavigator();
 
    return (
@@ -10,15 +10,9 @@ const RegisterStack = () => {
          screenOptions={{
             headerShown: false,
          }}>
-         <Stack.Screen
-            name="Register"
-            component={Register}
-            options={{
-               title: 'Register',
-            }}
-         />
+         <Stack.Screen name="playlists" component={Playlists} />
       </Stack.Navigator>
    );
 };
 
-export { RegisterStack };
+export { PlaylistStack };
