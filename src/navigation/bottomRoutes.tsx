@@ -15,7 +15,6 @@ const stackAnimation = {
 const BottomRoutes = () => {
    const Navigation = createBottomTabNavigator();
    const selectedTab = useSharedValue(0);
-
    const animateIcon = (index: number) => iconAnimation(index, selectedTab);
 
    return (
@@ -39,7 +38,7 @@ const BottomRoutes = () => {
                      <Icon
                         name={focused ? 'ios-home' : 'ios-home-outline'}
                         color="white"
-                        size={26}
+                        size={20}
                      />
                   </Animated.View>
                ),
@@ -52,7 +51,7 @@ const BottomRoutes = () => {
             options={{
                tabBarIcon: () => (
                   <Animated.View style={animateIcon(1)}>
-                     <Icon name="ios-search" color="white" size={26} />
+                     <Icon name="ios-search" color="white" size={20} />
                   </Animated.View>
                ),
             }}
@@ -66,7 +65,7 @@ const BottomRoutes = () => {
                      <Icon
                         name={focused ? 'ios-library' : 'ios-library-outline'}
                         color="white"
-                        size={26}
+                        size={20}
                      />
                   </Animated.View>
                ),

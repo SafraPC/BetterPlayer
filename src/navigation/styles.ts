@@ -10,23 +10,19 @@ import {
 export const styles: BottomTabNavigationOptions = {
    headerShown: false,
    tabBarActiveTintColor: 'white',
-   tabBarInactiveTintColor: 'gray',
    tabBarShowLabel: false,
    tabBarStyle: {
-      opacity: 0.75,
+      opacity: 0.8,
       backgroundColor: 'black',
       borderTopWidth: 0,
       position: 'absolute',
       left: 0,
       right: 0,
       bottom: 0,
-      height: 85,
-      elevation: 1,
+      height: 70,
    },
    tabBarItemStyle: {
       marginTop: 10,
-      justifyContent: 'center',
-      alignItems: 'center',
    },
 };
 

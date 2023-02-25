@@ -5,66 +5,6 @@ const Login = () => {
    return (
       <Container>
          <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
-         <WelcomeText>Login</WelcomeText>
       </Container>
    );
 };
