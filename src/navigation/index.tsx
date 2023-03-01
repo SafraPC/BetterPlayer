@@ -1,12 +1,15 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { BottomRoutes } from './bottomRoutes';
+import { Container } from './styles';
 
 const Routes = () => {
    return (
-      <NavigationContainer>
-         <BottomRoutes />
-      </NavigationContainer>
+      <Container>
+         <NavigationContainer>
+            <BottomRoutes />
+         </NavigationContainer>
+      </Container>
    );
 };
 

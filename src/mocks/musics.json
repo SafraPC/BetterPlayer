@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Music1",
+    "time": "00:00:00",
+    "url": "http://www.example.com/music1.mp3",
+    "artistId": "Artist1",
+    "album": "Album1",
+    "cover": "http://www.example.com/cover1.jpg",
+    "playlists": [
+      "playlist1",
+      "playlist2"
+    ],
+    "tags": [
+      "tag1",
+      "tag2"
+    ],
+    "description": "Description1"
+  },
+  {
+    "name": "Music2",
+    "time": "00:00:00",
+    "url": "http://www.example.com/music2.mp3",
+    "artistId": "Artist2",
+    "album": "Album2",
+    "cover": "http://www.example.com/cover2.jpg",
+    "playlists": [
+      "playlist1",
+      "playlist2"
+    ],
+    "tags": [
+      "tag1",
+      "tag2"
+    ],
+    "description": "Description2"
+  }
+]

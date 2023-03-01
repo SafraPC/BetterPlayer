@@ -34,6 +34,7 @@ const BottomRoutes = () => {
             name="HomeStack"
             component={HomeStack}
             options={{
+               title: 'Início',
                tabBarIcon: ({ focused }) => (
                   <Animated.View style={animateIcon(0)}>
                      <Icon
@@ -50,6 +51,7 @@ const BottomRoutes = () => {
             name="SearchStack"
             component={SearchStack}
             options={{
+               title: 'Procurar',
                tabBarIcon: () => (
                   <Animated.View style={animateIcon(1)}>
                      <Icon name="ios-search" color="white" size={20} />
@@ -61,6 +63,7 @@ const BottomRoutes = () => {
             name="PlaylistStack"
             component={PlaylistStack}
             options={{
+               title: 'Playlists',
                tabBarIcon: ({ focused }) => (
                   <Animated.View style={animateIcon(2)}>
                      <Icon

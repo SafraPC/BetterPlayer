@@ -6,11 +6,21 @@ import {
    useSharedValue,
    withSpring,
 } from 'react-native-reanimated';
+import styled from 'styled-components/native';
+
+export const Container = styled.View`
+   flex: 1;
+   background-color: ${({ theme }) => theme.colors.primary};
+`;
 
 export const styles: BottomTabNavigationOptions = {
    headerShown: false,
    tabBarActiveTintColor: 'white',
-   tabBarShowLabel: false,
+   tabBarLabelStyle: {
+      fontSize: 10,
+      fontWeight: 'bold',
+   },
+
    tabBarStyle: {
       opacity: 0.8,
       backgroundColor: 'black',
@@ -19,10 +29,9 @@ export const styles: BottomTabNavigationOptions = {
       left: 0,
       right: 0,
       bottom: 0,
-      height: 70,
    },
    tabBarItemStyle: {
-      marginTop: 10,
+      marginTop: 5,
    },
 };
 

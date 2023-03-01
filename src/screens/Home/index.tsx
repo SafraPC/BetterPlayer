@@ -1,8 +1,11 @@
 import React from 'react';
-import { Container } from '../../styles/default';
+import { homeController } from './Home.controller';
+import { HomeView } from './Home.view';
 
-const Home: React.FC = () => {
-   return <Container />;
+const Home = () => {
+   const { musics } = homeController();
+
+   return <HomeView musics={musics} />;
 };
 
-export default Home;
+export { Home };

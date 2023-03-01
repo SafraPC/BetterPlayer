@@ -1,8 +1,8 @@
 import React from 'react';
-import { Container } from '../../styles/default';
+import { Page } from '../../components/Page';
 
 const Search: React.FC = () => {
-   return <Container />;
+   return <Page />;
 };
 
 export default Search;
