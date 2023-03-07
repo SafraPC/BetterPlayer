@@ -1,11 +1,15 @@
 import { useCallback, useEffect, useState } from 'react';
+import { MusicsDomain } from './aplication/Home.domain';
+import musicsMock from '../../mocks/musics.json';
 
 export interface HomeController {
-   musics?: string[];
+   musics?: MusicsDomain[];
+   loading: boolean;
+   error?: string;
 }
 
 const homeController = (): HomeController => {
-   const [musics, setMusics] = useState<string[] | undefined>();
+   const [musics, setMusics] = useState<MusicsDomain[]>(musicsMock);
    const [error, setError] = useState<string>();
    const [loading, setLoading] = useState(false);
 
@@ -26,6 +30,8 @@ const homeController = (): HomeController => {
 
    return {
       musics,
+      loading,
+      error,
    };
 };
 
