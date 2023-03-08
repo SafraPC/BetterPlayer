@@ -4,14 +4,14 @@ import { MusicsDomain } from '../../aplication/Home.domain';
 import {
    Column,
    Container,
+   IconContent,
    Image,
-   Like,
-   Options,
    Subtitle,
    Title,
 } from './styles';
 import OptionsIcon from 'react-native-vector-icons/SimpleLineIcons';
 import HeartIcon from 'react-native-vector-icons/AntDesign';
+import DownloadIcon from 'react-native-vector-icons/Feather';
 
 interface CardProps {
    item: MusicsDomain;
@@ -29,12 +29,21 @@ const Card: React.FC<CardProps> = ({ item }) => {
             <Title>Título</Title>
             <Subtitle>Subtitulo</Subtitle>
          </Column>
-         <Like>
-            <HeartIcon name="hearto" size={20} color="white" />
-         </Like>
-         <Options>
+         <IconContent>
+            {item.downloaded && (
+               <DownloadIcon name="download" size={20} color="green" />
+            )}
+         </IconContent>
+         <IconContent>
+            <HeartIcon
+               name={item.liked ? 'heart' : 'hearto'}
+               size={20}
+               color="white"
+            />
+         </IconContent>
+         <IconContent>
             <OptionsIcon name="options" size={20} color="white" />
-         </Options>
+         </IconContent>
       </Container>
    );
 };

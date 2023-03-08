@@ -34,15 +34,7 @@ export const Image = styled.Image`
    border-radius: 4px;
 `;
 
-export const Options = styled.TouchableOpacity`
-   width: 30px;
-   height: 30px;
-   border-radius: 4px;
-   justify-content: center;
-   align-items: center;
-`;
-
-export const Like = styled.TouchableOpacity`
+export const IconContent = styled.TouchableOpacity`
    width: 30px;
    height: 30px;
    margin-right: 15px;

@@ -14,6 +14,8 @@
       "tag1",
       "tag2"
     ],
+    "liked": true,
+    "downloaded": false,
     "description": "Description1"
   },
   {
@@ -31,6 +33,8 @@
       "tag1",
       "tag2"
     ],
+    "downloaded": true,
+    "liked": false,
     "description": "Description2"
   }
 ]

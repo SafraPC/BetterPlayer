@@ -8,4 +8,6 @@ export interface MusicsDomain {
    playlists: string[];
    tags: string[];
    description: string;
+   liked: boolean;
+   downloaded: boolean;
 }
