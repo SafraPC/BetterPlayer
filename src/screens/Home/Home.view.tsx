@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { AnimatedCardList } from '../../components/AnimatedCard';
 import { Page } from '../../components/Page';
 import useFlatList from '../../hooks/useFlatList';
 import { Card } from './components/Card';
@@ -10,10 +10,13 @@ const HomeView: React.FC<HomeController> = ({ musics, loading, error }) => {
 
    return (
       <Page>
-         <Text>oi</Text>
          <List
             data={musics}
-            renderItem={({ item }) => <Card item={item} />}
+            renderItem={({ item }) => (
+               <AnimatedCardList>
+                  <Card item={item} />
+               </AnimatedCardList>
+            )}
             emptyText={error}
             loading={loading}
          />

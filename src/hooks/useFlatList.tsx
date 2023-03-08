@@ -18,7 +18,7 @@ function useFlatList<T = any>() {
          ({
             contentContainerStyle: {
                flexGrow: 1,
-               padding: 20,
+               padding: 15,
                paddingBottom: getBottomSpace() + 20,
             },
          } as StyleProp<ViewStyle>)
@@ -27,7 +27,7 @@ function useFlatList<T = any>() {
    `;
 
    const Separator = styled.View`
-      height: 20px;
+      height: 12px;
    `;
 
    const keyExtractor = useCallback((item: T, index: number) => `${index}`, []);
