@@ -2,7 +2,7 @@ export interface MusicsDomain {
    name: string;
    time: string;
    url: string;
-   artistId: string;
+   artist: string;
    album: string;
    cover: string;
    playlists: string[];

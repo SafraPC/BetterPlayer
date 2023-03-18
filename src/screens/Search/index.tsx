@@ -1,8 +1,10 @@
 import React from 'react';
-import { Page } from '../../components/Page';
+import { SearchController } from './Search.controller';
+import { SearchView } from './Search.view';
 
 const Search: React.FC = () => {
-   return <Page />;
+   const searchController = SearchController();
+   return <SearchView {...searchController} />;
 };
 
-export default Search;
+export { Search };

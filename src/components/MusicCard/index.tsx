@@ -1,6 +1,5 @@
 import React from 'react';
-import { Text } from 'react-native';
-import { MusicsDomain } from '../../aplication/Home.domain';
+import { MusicsDomain } from '../../screens/Home/aplication/Home.domain';
 import {
    Column,
    Container,
@@ -13,11 +12,11 @@ import OptionsIcon from 'react-native-vector-icons/SimpleLineIcons';
 import HeartIcon from 'react-native-vector-icons/AntDesign';
 import DownloadIcon from 'react-native-vector-icons/Feather';
 
-interface CardProps {
+interface MusicCardProps {
    item: MusicsDomain;
 }
 
-const Card: React.FC<CardProps> = ({ item }) => {
+const MusicCard: React.FC<MusicCardProps> = ({ item }) => {
    return (
       <Container>
          <Image
@@ -26,8 +25,8 @@ const Card: React.FC<CardProps> = ({ item }) => {
             }}
          />
          <Column>
-            <Title>Título</Title>
-            <Subtitle>Subtitulo</Subtitle>
+            <Title>{item?.name || '-'}</Title>
+            <Subtitle>{item?.artist || '-'}</Subtitle>
          </Column>
          <IconContent>
             {item.downloaded && (
@@ -48,4 +47,4 @@ const Card: React.FC<CardProps> = ({ item }) => {
    );
 };
 
-export { Card };
+export { MusicCard };

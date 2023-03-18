@@ -3,7 +3,7 @@
     "name": "Music1",
     "time": "00:00:00",
     "url": "http://www.example.com/music1.mp3",
-    "artistId": "Artist1",
+    "artist": "Artist1",
     "album": "Album1",
     "cover": "http://www.example.com/cover1.jpg",
     "playlists": [
@@ -22,7 +22,7 @@
     "name": "Music2",
     "time": "00:00:00",
     "url": "http://www.example.com/music2.mp3",
-    "artistId": "Artist2",
+    "artist": "Artist2",
     "album": "Album2",
     "cover": "http://www.example.com/cover2.jpg",
     "playlists": [
