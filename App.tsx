@@ -4,6 +4,8 @@ import theme from './src/styles/theme';
 import { StatusBar } from 'expo-status-bar';
 import AppNavigation from './src/navigation/index';
 
+//teste
+
 const App = () => {
    return (
       <ThemeProvider theme={theme}>
